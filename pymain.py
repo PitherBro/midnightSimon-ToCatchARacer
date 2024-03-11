@@ -21,7 +21,8 @@ sys.path.append(modPath)
 
 if __name__ == "__main__":
     #print(__name__)
-    #print(sys.argv)    
+    #print(sys.argv)
     #print(sys.path)
+    
     print(root)
     pass
