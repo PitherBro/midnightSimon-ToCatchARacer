@@ -1,8 +1,8 @@
 #!/bin/python3
 
-#Python Modules
-import os,sys, urllib3,json,math
-from pathlib import Path
+
+#custom made modules
+from midnightSimonScraper_C import *
 
 #External modules
 #makes an HTTP request for a website
@@ -10,100 +10,37 @@ import requests
 #parses HTML into easily skimmable objects
 from bs4 import BeautifulSoup
 
-#where the program rests on the disk
-root = Path(os.path.dirname( __file__ ))
-
-
 '''
 #import another module from anywhere
 modPath = root/"module"
 sys.path.append(modPath)
 '''
 
-### most or all variables can be moved into a common.py module
-
-#where the data is on the web
-urlResource = "https://midnightsimon.com/"
-#where to save our data dumps
-dataFolder= root/"data"
-#data that still needs to be sanatized
-rawDataFolder = dataFolder/"raws"
-#a list of objects representing typing champion data over time
-jsonFileFolder= dataFolder/"json"
-
-#the local HTML Resource
-htmlFile=rawDataFolder/"index.html"
-#the final form of the data we want
-championsFile=jsonFileFolder/"champions.json"
-
-paths = [
-    root,
-    dataFolder,
-    rawDataFolder,
-    jsonFileFolder,
-]
 '''a list of all know program directories'''
-
 
 def checkDirs():
     '''
     checks if all the program directories exists, creates them if not.
     '''
-    for p in paths:
-        if not os.path.exists(p):
-            os.mkdir(p)
+    for p in clb.paths:
+        if not clb.os.path.exists(p):
+            clb.os.mkdir(p)
             print(f"Directory DNE: {p}")
 
 def getHTMLFileOrNot():
     '''
     Gets html source if it does not exist on the files system already.
     '''
-    if(not Path.is_file(htmlFile)):
+    if(not clb.Path.is_file(clb.htmlFilePath)):
         #makes a live http request
-        req = requests.get(urlResource)
+        req = requests.get(clb.urlResource)
         raw_html = req.text
         print(f"Retrived Datafile with Code:{req.status_code}")
-        print(raw_html, file=open(htmlFile,"w"))
+        print(raw_html, file=open(clb.htmlFilePath,"w"))
     print("Completed Check")
-    return open(htmlFile,'r').read()
+    return open(clb.htmlFilePath,'r').read()
 
-class Champion():
-    '''
-    a data struct representing a typing racer outcomes 
-    '''
-    def __init__(self, date="", name="", initialWordCount=0 ) -> None:
-        self.name = name
-        self.dates = []
-        self.wordsPerMinute= []
 
-        self.dates.append(date)
-        self.wordsPerMinute.append(initialWordCount)
-    def addAnotherSingleAttempt(self, date = "", wordsPerMin=0):
-        self.dates.append(date)
-        self.wordsPerMinute.append(wordsPerMin)
-    def replaceExistingLists(self,dates=[], listOfWords=[]):
-        self.dates = dates
-        self.wordsPerMinute = listOfWords
-    def convertToJSON(self,):
-        theDictVersion = {}
-        theDictVersion ["name"] = self.name
-        theDictVersion["dates"]  = self.dates
-        theDictVersion["wordsPerMinute"] = self.wordsPerMinute
-        return json.dumps(theDictVersion,indent=2)
-    def getWordsPerLimitList(self,):
-        return self.wordsPerMinute
-    def getAttendance(self,):
-        return self.dates
-    def getName(self,):
-        return self.name
-    def getCountedWins(self,):
-        return len(self.getWordsPerLimitList())
-    def getCalculatedAverageWPM(self):
-            total = 0
-            for x in self.wordsPerMinute:
-                total += x
-            
-            return total/self.getCountedWins() 
 def getChampList():
     '''
     Return a list of classes (Champion) by scraping index.html
@@ -154,13 +91,13 @@ def saveToJSONFile(champList=[Champion]):
     '''
     champJSONList = []
     for c in champList:
-        champJSONList.append(json.loads(c.convertToJSON()))
-    if not os.path.isfile(championsFile):
-        print(json.dumps(champJSONList, indent=2), file=open(championsFile,'w'))
+        champJSONList.append(clb.json.loads(c.convertToJSON()))
+    if not clb.os.path.isfile(clb.championsFilePath):
+        print(clb.json.dumps(champJSONList, indent=2), file=open(clb.championsFilePath,'w'))
            
 def loadChampionsUpFromJSON():
     '''Return champtions by reading champtions.json'''
-    jsonListOfChamps = json.loads(open(championsFile,'r').read())
+    jsonListOfChamps = clb.json.loads(open(clb.championsFilePath,'r').read())
     listOfChampions = [Champion]
 
     for c in jsonListOfChamps:
@@ -168,8 +105,6 @@ def loadChampionsUpFromJSON():
         champ.replaceExistingLists(c["dates"],c["wordsPerMinute"])
         listOfChampions.append(champ)
     return listOfChampions[1:]
-
-
 
 if __name__ == "__main__":
 
