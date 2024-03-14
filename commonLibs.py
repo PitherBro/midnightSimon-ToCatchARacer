@@ -26,7 +26,15 @@ paths = [
     rawDataFolder,
     jsonFileFolder,
 ]
-
+'''a list of all known program directories'''
+def checkDirs():
+    '''
+    checks if all the program directories exists, creates them if not.
+    '''
+    for p in paths:
+        if not os.path.exists(p):
+            os.mkdir(p)
+            print(f"Directory DNE: {p}")
 '''
 #import another module from anywhere
 modPath = root/"module"

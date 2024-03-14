@@ -15,17 +15,8 @@ from bs4 import BeautifulSoup
 modPath = root/"module"
 sys.path.append(modPath)
 '''
-
-'''a list of all know program directories'''
-
-def checkDirs():
-    '''
-    checks if all the program directories exists, creates them if not.
-    '''
-    for p in clb.paths:
-        if not clb.os.path.exists(p):
-            clb.os.mkdir(p)
-            print(f"Directory DNE: {p}")
+resultsHeader = "#"*6 + " RESULTS ARE IN " + "#"*6
+headerDivider = "-"*12
 
 def getHTMLFileOrNot():
     '''
@@ -37,9 +28,8 @@ def getHTMLFileOrNot():
         raw_html = req.text
         print(f"Retrived Datafile with Code:{req.status_code}")
         print(raw_html, file=open(clb.htmlFilePath,"w"))
-    print("Completed Check")
+    print("Completed Program Directory Check")
     return open(clb.htmlFilePath,'r').read()
-
 
 def getChampList():
     '''
@@ -87,7 +77,7 @@ def getChampList():
 
 def saveToJSONFile(champList=[Champion]):
     '''
-    checks if the champions.json exists, creates from index.html if not
+    checks if the champions.json exists, creates from index.html Champion List if it DNE
     '''
     champJSONList = []
     for c in champList:
@@ -109,9 +99,12 @@ def loadChampionsUpFromJSON():
 if __name__ == "__main__":
 
     #preliminary steps to gather and consolidate data
-    checkDirs()
+    clb.checkDirs()
     champList = getChampList()
     saveToJSONFile(champList)
+    print("----- Data Gathered and Organized From Source -----")
+    del champList
+    print("----- Excess Memory usage cleared (champList) -----")
 
     #doing stuff with data
     theRealChampions = loadChampionsUpFromJSON()
@@ -122,10 +115,13 @@ if __name__ == "__main__":
 
     theMostVictoriousChampion = theRealChampions[0]
     theLeastVictoriousChamption = theRealChampions[0]
+    
+    theMostImprovedChampion = theRealChampions[0]
+    theLeastImprovedChampion = theRealChampions[0]
 
     stepTracker =0
 
-    theOverallAverage = theRealChampions[0].getCalculatedAverageWPM()
+    theOverallAverage = theRealChampions[0].getAverageWPM()
 
     for c in theRealChampions:
         #if the most victorious champion has less wins than the current, reassign the champion
@@ -137,19 +133,49 @@ if __name__ == "__main__":
         if len(theLeastVictoriousChamption.getWordsPerLimitList()) > len(c.getWordsPerLimitList()):
             print(f"{theLeastVictoriousChamption.getName()} is no longer <LEAST> champ with {theLeastVictoriousChamption.getCountedWins() } wins and is replaced with {c.getName()} and {c.getCountedWins()} wins")
             theLeastVictoriousChamption = c
+        #if the slowest champ is faster, they are not the slowest
+        if theSlowestChamp.getSlowestSpeed() > c.getSlowestSpeed():
+            theSlowestChamp = c
+        #if the fastest champ is slower, they are not the fastest
+        if theFastestChamp.getFastestSpeed() < c.getFastestSpeed():
+            theFastestChamp = c
+
+        #the most Average
+        if theAverageChamp.getAverageWPM() < c.getAverageWPM():
+            theAverageChamp = c
+
+        #the least improved
+        if theLeastImprovedChampion.getImprovementWeight() > c.getImprovementWeight():
+            theLeastImprovedChampion = c
+
+        #the most improved
+        if theMostImprovedChampion.getImprovementWeight() < c.getImprovementWeight():
+            theMostImprovedChampion = c
 
         #find the person with most wins, assign them at the top of the loop nest
         #Check person with most wins, against person with least, to find the one who types the fastest, slowest and most average.
         #the average needs to be known previously or, somehow tracked and adjusted during this loop.
         
-        
-        
         if not stepTracker == 0:
-            theOverallAverage += c.getCalculatedAverageWPM() 
+            theOverallAverage += c.getAverageWPM() 
             theOverallAverage /= 2
         stepTracker +=1
-    
-    print(f"""{theMostVictoriousChampion.getName()} is most Victorious with {theMostVictoriousChampion.getCountedWins()} wins\n\
-{theLeastVictoriousChamption.getName()} is the least Victorius with {theLeastVictoriousChamption.getCountedWins()}""")
 
+    print(headerDivider)
+    print(resultsHeader)
+    print(headerDivider)
+
+    print(f"""\
+{theMostVictoriousChampion.getName()} is MOST Victorious with {theMostVictoriousChampion.getCountedWins()} wins\n\
+{theLeastVictoriousChamption.getName()} is the LEAST Victorius with {theLeastVictoriousChamption.getCountedWins()}\n\
+{theSlowestChamp.getName()} is the SLOWEST with {theSlowestChamp.getSlowestSpeed()} WPM\n\
+{theFastestChamp.getName()} is the FASTEST with {theFastestChamp.getFastestSpeed()} WPM\n\
+{theAverageChamp.getName()} is the most AVERAGE  with {theAverageChamp.getAverageWPM()} WPM\n\
+Program took {stepTracker} steps to complete and calculates a global average of {round(theOverallAverage, 3)} WPM for all Racers\n\
+{theLeastImprovedChampion.getName()} is the LEAST IMPROVED with {theLeastImprovedChampion.getCountedWins()} championship wins and a weighted averaged of {theLeastImprovedChampion.getImprovementWeight()}\n\
+{theMostImprovedChampion.getName()} is the MOST IMPROVED with {theMostImprovedChampion.getCountedWins()} championship wins and a weighted averaged of {theMostImprovedChampion.getImprovementWeight()}\n\
+""")
+    testChamp = theRealChampions[0] 
+    testChamp.getImprovementWeight()
+    #print(f"{testChamp.getName()} {testChamp.getAttendance()[0]} {testChamp.getWordsPerLimitList()[0]}")
     pass

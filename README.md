@@ -24,16 +24,18 @@ This program accesss and pulls typing game information hosted on [Midnight Simon
 - scrape out the typing game information | ✅️
 - conclude some statistics off the data | ☑️
     - who wins the most? | ✅️
-    - fastest, slowest, average typing speed? | ❌️
+    - fastest, slowest, average typing speed? | ✅️
         - pulling each champion's history. | ✅️
-        - their progress over time(from earlierst to newest) ❌️
-    - who improved the most | ❌️
-    - who has improved the least | ❌️
-- modulate code to class | ❌️
+        - their progress over time (from earlierst to newest) ❌️
+    - who improved the most/least | ✅️
+        - used a weighted average from the oldest win to the most recent
+- modulate code to class | ✅️
+
+
 Optional
 ----
 
-- make console output more interesting. | ❌️
+- make console output more interesting. | ☑️
 - make a printable HTML document using BeautifulSoup | ❌️
 - make a detection system that attempts to update every other day. (looks for new winners) | ❌️
     

@@ -1,8 +1,9 @@
 #!/bin/bash
 
-#activates the python virtual environment
+#activates the python virtual environment, must be bash
 source ./.venv/bin/activate
 
+## rest could be a python module, check libs.
 # only if source is active
 pip install -r ./requirements.txt
 
