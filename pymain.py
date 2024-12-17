@@ -15,7 +15,10 @@ from bs4 import BeautifulSoup
 modPath = root/"module"
 sys.path.append(modPath)
 '''
-resultsHeader = "#"*6 + " RESULTS ARE IN " + "#"*6
+
+#terminal output stylings 
+header="#"*6
+resultsHeader = header + " RESULTS ARE IN " + header
 headerDivider = "-"*12
 
 def getHTMLFileOrNot():
@@ -41,7 +44,7 @@ def getChampList():
     championElementList = champElementHolder.find_all('p')
 
     championList = [Champion]
-
+    
     for champ in championElementList:
         nameElement = champ.find_all('b')[0]
         champ.replace_with(nameElement, "")
@@ -103,6 +106,7 @@ if __name__ == "__main__":
     champList = getChampList()
     saveToJSONFile(champList)
     print("----- Data Gathered and Organized From Source -----")
+    #removes the list since we can use the newly generated JSON file
     del champList
     print("----- Excess Memory usage cleared (champList) -----")
 

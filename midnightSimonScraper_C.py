@@ -1,4 +1,9 @@
 #!/bin/python3
+'''
+Classes we will use in the main fucntion. \n
+it utilizes commonLibs.py to help build the calsses.
+'''
+
 import commonLibs as clb
 
 '''
@@ -9,7 +14,8 @@ sys.path.append(modPath)
 
 class Champion():
     '''
-    a data struct representing a typing racer outcomes 
+    a data struct representing a typing racer outcomes,\n
+    does most of the work to determine the stats of an individual typer.
     '''
     def __init__(self, date="", name="", initialWordCount=0 ) -> None:
         self.name = name

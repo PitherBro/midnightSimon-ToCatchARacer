@@ -1,7 +1,10 @@
 #!/bin/python3
-
+'''
+Some commonly shared functions and variables between modules. \n
+mostly utility based.
+'''
 #Python Modules
-import os,sys, urllib3,json,math
+import os,sys, urllib3, json, math
 from pathlib import Path
 
 root = Path(os.path.dirname( __file__ ))
@@ -27,6 +30,7 @@ paths = [
     jsonFileFolder,
 ]
 '''a list of all known program directories'''
+
 def checkDirs():
     '''
     checks if all the program directories exists, creates them if not.
