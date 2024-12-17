@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python3 -m venv .venv
+python3 -m venv venv
 #activates the python virtual environment, must be bash
 source ./.venv/bin/activate
 
