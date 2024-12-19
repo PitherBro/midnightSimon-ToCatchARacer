@@ -1,200 +1,114 @@
 [
   {
-    "name": "guest",
+    "name": "areeke",
     "dates": [
-      "March 13th 2024",
-      "July 24th 2023",
-      "July 5th 2023",
-      "July 3rd 2023",
-      "June 26th 2023"
+      "Dec 12th, 2024",
+      "Aug 26th, 2024",
+      "Jul 5th, 2023",
+      "Apr 10th, 2023",
+      "Apr 8th, 2023",
+      "Dec 2nd, 2022",
+      "Dec 1st, 2022"
     ],
     "wordsPerMinute": [
-      112,
-      130,
-      112,
-      145,
-      125
-    ]
-  },
-  {
-    "name": "sm12333",
-    "dates": [
-      "March 13th 2024",
-      "Aug  2nd 2023"
-    ],
-    "wordsPerMinute": [
-      100,
-      107
-    ]
-  },
-  {
-    "name": "loroadsimracing",
-    "dates": [
-      "March 11th 2024",
-      "March 6th 2024",
-      "March 4th 2024",
-      "Feb  28th 2024"
-    ],
-    "wordsPerMinute": [
-      134,
-      148,
-      140,
-      134
-    ]
-  },
-  {
-    "name": "strikeonbruhh",
-    "dates": [
-      "March 11th 2024",
-      "Jan  29th 2024"
-    ],
-    "wordsPerMinute": [
-      129,
-      108
-    ]
-  },
-  {
-    "name": "nocondomchris",
-    "dates": [
-      "March 9th 2024",
-      "Feb  21st 2024",
-      "Feb  19th 2024",
-      "Feb  3rd 2024",
-      "Jan  27th 2024",
-      "Dec  11th 2023",
-      "Dec  9th 2023",
-      "Nov  30th 2023",
-      "Nov  27th 2023",
-      "Nov  15th 2023",
-      "August 12th 2022",
-      "August 8th 2022",
-      "August 5th 2022",
-      "June 30th 2022",
-      "June 25th 2022",
-      "June 24th 2022"
-    ],
-    "wordsPerMinute": [
-      123,
-      103,
-      106,
-      102,
+      131,
       121,
-      108,
-      114,
-      113,
-      106,
-      105,
-      113,
-      121,
-      114,
-      107,
-      113,
+      119,
+      117,
+      117,
+      127,
       126
     ]
   },
   {
-    "name": "no3lcodes",
+    "name": "save_it_here",
     "dates": [
-      "March 6th 2024"
+      "Dec 12th, 2024",
+      "Dec 9th, 2024",
+      "Nov 22nd, 2024"
     ],
     "wordsPerMinute": [
-      98
+      133,
+      108,
+      124
     ]
   },
   {
-    "name": "inrosis94",
+    "name": "dontdefense",
     "dates": [
-      "March 2nd 2024",
-      "Jan  25th 2024",
-      "Jan  20th 2024",
-      "Dec  11th 2023",
-      "June 24th 2023",
-      "December 17th 2022",
-      "December 10th 2022",
-      "November 29th 2022",
-      "November 29th 2022",
-      "November 12th 2022",
-      "November 11th 2022",
-      "November 8th 2022",
-      "November 5th 2022",
-      "November 3rd 2022",
-      "August 21st 2022",
-      "August 8th 2022",
-      "August 7th 2022",
-      "June 22th 2022",
-      "June 21th 2022",
-      "June 17th 2022",
-      "June 16th 2022",
-      "June 15th 2022",
-      "June 14th 2022"
+      "Dec 9th, 2024",
+      "Nov 25th, 2024",
+      "Nov 22nd, 2024",
+      "Nov 8th, 2024",
+      "Nov 7th, 2024",
+      "Oct 14th, 2024",
+      "Oct 5th, 2024",
+      "Sep 30th, 2024",
+      "Sep 23rd, 2024",
+      "Aug 28th, 2024",
+      "Jun 14th, 2024",
+      "May 11th, 2024",
+      "Apr 20th, 2024",
+      "Apr 6th, 2024",
+      "Apr 1st, 2024"
     ],
     "wordsPerMinute": [
-      124,
-      102,
-      142,
-      123,
-      127,
-      101,
-      122,
-      115,
-      124,
-      123,
-      106,
-      122,
-      111,
-      116,
-      121,
-      121,
-      119,
-      122,
-      105,
       112,
-      115,
-      108,
-      104
+      107,
+      101,
+      109,
+      102,
+      83,
+      113,
+      85,
+      60,
+      102,
+      117,
+      102,
+      112,
+      112,
+      111
     ]
   },
   {
     "name": "q_ultimas",
     "dates": [
-      "Feb  24th 2024",
-      "Jan  17th 2024",
-      "Jan  15th 2024",
-      "Dec  7th 2023",
-      "Dec  5th 2023",
-      "Dec  2nd 2023",
-      "Nov  15th 2023",
-      "Nov  8th 2023",
-      "Nov  6th 2023",
-      "Nov  4th 2023",
-      "Aug  14th 2023",
-      "Aug  12th 2023",
-      "June 19th 2023",
-      "May 8th 2023",
-      "April 15th 2023",
-      "April 8th 2023",
-      "March 27th 2023",
-      "March 25th 2023",
-      "March 20th 2023",
-      "October 29th 2022",
-      "October 15th 2022",
-      "August 23rd 2022",
-      "August 2nd 2022",
-      "June 11th 2022",
-      "June 7th 2022"
+      "Nov 30th, 2024",
+      "Nov 9th, 2024",
+      "Oct 23rd, 2024",
+      "Sep 2nd, 2024",
+      "Sep 2nd, 2024",
+      "Aug 24th, 2024",
+      "Aug 19th, 2024",
+      "Jun 17th, 2024",
+      "May 8th, 2024",
+      "Apr 24th, 2024",
+      "Apr 22nd, 2024",
+      "Jun 19th, 2023",
+      "May 8th, 2023",
+      "Apr 15th, 2023",
+      "Apr 8th, 2023",
+      "Mar 27th, 2023",
+      "Mar 25th, 2023",
+      "Mar 20th, 2023",
+      "Oct 29th, 2022",
+      "Oct 15th, 2022",
+      "Aug 23rd, 2022",
+      "Aug 2nd, 2022",
+      "Jun 11th, 2022",
+      "Jun 7th, 2022"
     ],
     "wordsPerMinute": [
-      92,
-      109,
-      117,
-      104,
-      117,
+      111,
+      118,
+      125,
       103,
-      99,
-      128,
-      83,
-      116,
       105,
+      119,
+      111,
+      94,
+      106,
+      112,
       112,
       119,
       99,
@@ -212,100 +126,288 @@
     ]
   },
   {
-    "name": "zombiechou",
+    "name": "guest",
     "dates": [
-      "Feb  19th 2024",
-      "Feb  7th 2024",
-      "June 28th 2023"
+      "Nov 25th, 2024",
+      "Nov 20th, 2024",
+      "Oct 18th, 2024",
+      "Apr 22nd, 2024",
+      "Mar 13th, 2024",
+      "Jul 24th, 2023",
+      "Jul 5th, 2023",
+      "Jul 3rd, 2023",
+      "Jun 26th, 2023"
     ],
     "wordsPerMinute": [
-      98,
-      107,
-      123
+      109,
+      100,
+      110,
+      102,
+      112,
+      130,
+      112,
+      145,
+      125
     ]
   },
   {
-    "name": "cm92342",
+    "name": "midnight_simon",
     "dates": [
-      "Feb  17th 2024",
-      "Jan  31st 2024"
+      "Nov 18th, 2024",
+      "Oct 16th, 2024",
+      "Oct 9th, 2024",
+      "Jun 14th, 2024",
+      "Apr 17th, 2024",
+      "Mar 30th, 2024",
+      "Mar 25th, 2024",
+      "Jul 17th, 2023",
+      "May 10th, 2023",
+      "Mar 22nd, 2023",
+      "Mar 6th, 2023",
+      "Nov 7th, 2022",
+      "Jun 20th, 2022",
+      "Jun 19th, 2022",
+      "Jun 10th, 2022",
+      "Jun 8th, 2022"
     ],
     "wordsPerMinute": [
-      120,
-      107
+      88,
+      86,
+      91,
+      93,
+      106,
+      110,
+      100,
+      109,
+      102,
+      105,
+      95,
+      106,
+      100,
+      100,
+      113,
+      101
     ]
   },
   {
     "name": "pixelpusher",
     "dates": [
-      "Feb  5th 2024"
+      "Nov 16th, 2024",
+      "Nov 14th, 2024",
+      "Nov 12th, 2024",
+      "Nov 12th, 2024",
+      "Nov 12th, 2024",
+      "Nov 11th, 2024",
+      "Nov 10th, 2024",
+      "Nov 9th, 2024",
+      "Nov 8th, 2024",
+      "Nov 6th, 2024",
+      "Nov 6th, 2024",
+      "Oct 30th, 2024",
+      "Oct 30th, 2024",
+      "Oct 28th, 2024",
+      "Oct 28th, 2024",
+      "Oct 27th, 2024",
+      "Oct 27th, 2024",
+      "Oct 23rd, 2024",
+      "Oct 21st, 2024",
+      "Oct 18th, 2024",
+      "Oct 14th, 2024",
+      "Oct 7th, 2024",
+      "Oct 7th, 2024",
+      "Oct 5th, 2024",
+      "Oct 2nd, 2024",
+      "Oct 2nd, 2024",
+      "Sep 30th, 2024",
+      "Sep 26th, 2024",
+      "Sep 23rd, 2024",
+      "Sep 21st, 2024",
+      "Sep 21st, 2024",
+      "Sep 18th, 2024",
+      "Sep 18th, 2024",
+      "Sep 16th, 2024",
+      "Sep 16th, 2024",
+      "Sep 14th, 2024",
+      "Sep 14th, 2024",
+      "Sep 11th, 2024",
+      "Sep 11th, 2024",
+      "Sep 11th, 2024",
+      "Sep 9th, 2024",
+      "Sep 4th, 2024",
+      "Sep 4th, 2024",
+      "Sep 4th, 2024",
+      "Sep 4th, 2024",
+      "Sep 4th, 2024",
+      "Jun 15th, 2024",
+      "Jun 15th, 2024",
+      "Jun 15th, 2024",
+      "Apr 10th, 2024",
+      "Mar 30th, 2024",
+      "Mar 27th, 2024"
     ],
     "wordsPerMinute": [
-      145
+      157,
+      175,
+      199,
+      156,
+      152,
+      163,
+      183,
+      160,
+      167,
+      157,
+      206,
+      168,
+      160,
+      141,
+      164,
+      173,
+      177,
+      136,
+      134,
+      169,
+      142,
+      122,
+      186,
+      185,
+      171,
+      159,
+      159,
+      156,
+      161,
+      165,
+      170,
+      151,
+      148,
+      182,
+      146,
+      174,
+      153,
+      131,
+      160,
+      166,
+      146,
+      165,
+      139,
+      145,
+      183,
+      170,
+      162,
+      166,
+      113,
+      166,
+      161,
+      155
     ]
   },
   {
-    "name": "areeke",
+    "name": "phlofy",
     "dates": [
-      "Jan  29th 2024",
-      "Nov  8th 2023",
-      "Oct  30th 2023",
-      "Aug  12th 2023",
-      "July 5th 2023",
-      "April 10th 2023",
-      "April 8th 2023",
-      "December 2nd 2022",
-      "December 1st 2022"
+      "Nov 15th, 2024",
+      "Nov 4th, 2024"
     ],
     "wordsPerMinute": [
-      116,
+      173,
+      118
+    ]
+  },
+  {
+    "name": "simon lally",
+    "dates": [
+      "Nov 14th, 2024"
+    ],
+    "wordsPerMinute": [
+      136
+    ]
+  },
+  {
+    "name": "nocondomchris",
+    "dates": [
+      "Nov 10th, 2024",
+      "Nov 7th, 2024",
+      "Nov 6th, 2024",
+      "Nov 4th, 2024",
+      "Sep 4th, 2024",
+      "Sep 2nd, 2024",
+      "Aug 26th, 2024",
+      "Jun 16th, 2024",
+      "Jun 14th, 2024",
+      "Jun 13th, 2024",
+      "May 11th, 2024",
+      "Apr 15th, 2024",
+      "Apr 13th, 2024",
+      "Apr 10th, 2024",
+      "Apr 6th, 2024",
+      "Mar 27th, 2024",
+      "Mar 9th, 2024",
+      "Aug 12th, 2022",
+      "Aug 8th, 2022",
+      "Aug 5th, 2022",
+      "Jun 30th, 2022",
+      "Jun 25th, 2022",
+      "Jun 24th, 2022"
+    ],
+    "wordsPerMinute": [
+      101,
       112,
+      92,
       120,
-      110,
-      119,
-      117,
-      117,
+      114,
+      139,
       127,
+      120,
+      128,
+      134,
+      111,
+      115,
+      125,
+      114,
+      108,
+      109,
+      123,
+      113,
+      121,
+      114,
+      107,
+      113,
       126
     ]
   },
   {
-    "name": "lucageorge",
+    "name": "p*rnhub",
     "dates": [
-      "Jan  27th 2024"
+      "Oct 19th, 2024"
     ],
     "wordsPerMinute": [
-      114
+      92
     ]
   },
   {
     "name": "overfitt",
     "dates": [
-      "Dec  9th 2023",
-      "Aug  2nd 2023",
-      "July 15th 2023",
-      "July 15th 2023",
-      "July 3rd 2023",
-      "June 28th 2023",
-      "June 19th 2023",
-      "May 22nd 2023",
-      "May 22nd 2023",
-      "May 20th 2023",
-      "May 13th 2023",
-      "August 22nd 2022",
-      "August 18th 2022",
-      "August 13th 2022",
-      "August 9th 2022",
-      "July 22nd 2022",
-      "July 21st 2022",
-      "July 1st 2022",
-      "June 29th 2022",
-      "June 26th 2022",
-      "June 23th 2022"
+      "Oct 18th, 2024",
+      "Jul 15th, 2023",
+      "Jul 15th, 2023",
+      "Jul 3rd, 2023",
+      "Jun 28th, 2023",
+      "Jun 19th, 2023",
+      "May 22nd, 2023",
+      "May 22nd, 2023",
+      "May 20th, 2023",
+      "May 13th, 2023",
+      "Aug 22nd, 2022",
+      "Aug 18th, 2022",
+      "Aug 13th, 2022",
+      "Aug 9th, 2022",
+      "Jul 22nd, 2022",
+      "Jul 21st, 2022",
+      "Jul 1st, 2022",
+      "Jun 29th, 2022",
+      "Jun 26th, 2022",
+      "Jun 23rd, 2022"
     ],
     "wordsPerMinute": [
-      132,
-      130,
+      126,
       153,
       130,
       125,
@@ -328,185 +430,170 @@
     ]
   },
   {
-    "name": "gorgontes",
+    "name": "loroadsimracing",
     "dates": [
-      "Dec  9th 2023",
-      "Dec  6th 2023",
-      "Dec  4th 2023",
-      "Nov  6th 2023",
-      "July 22nd 2023",
-      "July 1st 2023",
-      "June 12th 2023",
-      "May 15th 2023",
-      "April 10th 2023",
-      "April 5th 2023",
-      "March 1st 2023",
-      "August 9th 2022",
-      "June 23th 2022"
+      "Oct 16th, 2024",
+      "Apr 8th, 2024",
+      "Apr 8th, 2024",
+      "Apr 3rd, 2024",
+      "Apr 3rd, 2024",
+      "Apr 1st, 2024",
+      "Mar 18th, 2024",
+      "Mar 16th, 2024",
+      "Mar 11th, 2024",
+      "Mar 6th, 2024",
+      "Mar 4th, 2024"
     ],
     "wordsPerMinute": [
-      107,
-      116,
-      100,
-      105,
-      123,
-      112,
-      109,
-      110,
-      117,
-      105,
-      115,
-      126,
-      135
-    ]
-  },
-  {
-    "name": "improvednoob",
-    "dates": [
-      "Dec  5th 2023"
-    ],
-    "wordsPerMinute": [
-      116
-    ]
-  },
-  {
-    "name": "zyrophante",
-    "dates": [
-      "Dec  2nd 2023"
-    ],
-    "wordsPerMinute": [
-      108
-    ]
-  },
-  {
-    "name": "midnight_simon",
-    "dates": [
-      "Dec  1st 2023",
-      "Nov  13th 2023",
-      "Aug  9th 2023",
-      "July 17th 2023",
-      "May 10th 2023",
-      "March 22th 2023",
-      "March 6th 2023",
-      "November 7th 2022",
-      "June 20th 2022",
-      "June 19th 2022",
-      "June 10th 2022",
-      "June 8th 2022"
-    ],
-    "wordsPerMinute": [
-      109,
-      115,
-      99,
-      109,
-      102,
-      105,
-      95,
-      106,
-      100,
-      100,
-      113,
-      101
-    ]
-  },
-  {
-    "name": "stewsquared",
-    "dates": [
-      "Nov  29th 2023"
-    ],
-    "wordsPerMinute": [
-      103
-    ]
-  },
-  {
-    "name": "mmacheerpuppy",
-    "dates": [
-      "Nov  11th 2023"
-    ],
-    "wordsPerMinute": [
-      94
-    ]
-  },
-  {
-    "name": "v0lko",
-    "dates": [
-      "Nov  4th 2023",
-      "August 6th 2022"
-    ],
-    "wordsPerMinute": [
-      119,
-      124
-    ]
-  },
-  {
-    "name": "vim_tim",
-    "dates": [
-      "Oct  30th 2023",
-      "June 19th 2022",
-      "June 13th 2022"
-    ],
-    "wordsPerMinute": [
-      113,
-      114,
-      114
-    ]
-  },
-  {
-    "name": "notgentle",
-    "dates": [
-      "Aug  16th 2023",
-      "Aug  9th 2023",
-      "July 26th 2023",
-      "July 26th 2023",
-      "June 14th 2023",
-      "November 2nd 2022",
-      "July 20th 2022"
-    ],
-    "wordsPerMinute": [
-      113,
-      113,
-      128,
-      121,
-      117,
-      117,
-      109
+      134,
+      122,
+      160,
+      150,
+      144,
+      118,
+      142,
+      149,
+      134,
+      148,
+      140
     ]
   },
   {
     "name": "smartcoder5",
     "dates": [
-      "Aug  14th 2023",
-      "July 24th 2023"
+      "Oct 9th, 2024",
+      "May 6th, 2024",
+      "Jul 24th, 2023"
     ],
     "wordsPerMinute": [
-      100,
+      92,
+      92,
       97
+    ]
+  },
+  {
+    "name": "andrewjbarth",
+    "dates": [
+      "Sep 23rd, 2024"
+    ],
+    "wordsPerMinute": [
+      117
+    ]
+  },
+  {
+    "name": "larryny",
+    "dates": [
+      "Sep 23rd, 2024",
+      "Sep 23rd, 2024",
+      "May 13th, 2024",
+      "Oct 1st, 2022",
+      "Jul 19th, 2022",
+      "Jun 28th, 2022",
+      "Jun 27th, 2022"
+    ],
+    "wordsPerMinute": [
+      101,
+      98,
+      115,
+      137,
+      120,
+      103,
+      119
+    ]
+  },
+  {
+    "name": "muumijumala",
+    "dates": [
+      "Sep 23rd, 2024"
+    ],
+    "wordsPerMinute": [
+      77
+    ]
+  },
+  {
+    "name": "aluoh",
+    "dates": [
+      "Sep 16th, 2024"
+    ],
+    "wordsPerMinute": [
+      125
+    ]
+  },
+  {
+    "name": "niceatsbread",
+    "dates": [
+      "Sep 16th, 2024"
+    ],
+    "wordsPerMinute": [
+      160
+    ]
+  },
+  {
+    "name": "impact",
+    "dates": [
+      "Aug 31st, 2024"
+    ],
+    "wordsPerMinute": [
+      143
+    ]
+  },
+  {
+    "name": "pandapoopums",
+    "dates": [
+      "Jun 17th, 2024",
+      "Jun 15th, 2024",
+      "Dec 13th, 2022",
+      "Dec 7th, 2022",
+      "Dec 1st, 2022",
+      "Aug 4th, 2022",
+      "Jul 18th, 2022",
+      "Jun 27th, 2022",
+      "Jun 12th, 2022",
+      "Jun 12th, 2022",
+      "Jun 12th, 2022"
+    ],
+    "wordsPerMinute": [
+      117,
+      107,
+      129,
+      126,
+      133,
+      113,
+      143,
+      138,
+      116,
+      109,
+      105
     ]
   },
   {
     "name": "1015634",
     "dates": [
-      "July 31st 2023",
-      "July 31st 2023",
-      "July 24th 2023",
-      "July 12th 2023",
-      "May 17th 2023",
-      "May 13th 2023",
-      "May 8th 2023",
-      "May 3rd 2023",
-      "May 3rd 2023",
-      "May 1st 2023",
-      "April 26th 2023",
-      "April 19th 2023",
-      "April 1st 2023",
-      "March 18th 2023",
-      "December 8th 2022",
-      "August 7th 2022",
-      "July 1st 2022",
-      "June 18th 2022",
-      "June 17th 2022"
+      "Jun 17th, 2024",
+      "Jun 16th, 2024",
+      "Jul 31st, 2023",
+      "Jul 31st, 2023",
+      "Jul 24th, 2023",
+      "Jul 12th, 2023",
+      "May 17th, 2023",
+      "May 13th, 2023",
+      "May 8th, 2023",
+      "May 3rd, 2023",
+      "May 3rd, 2023",
+      "May 1st, 2023",
+      "Apr 26th, 2023",
+      "Apr 19th, 2023",
+      "Apr 1st, 2023",
+      "Mar 18th, 2023",
+      "Dec 8th, 2022",
+      "Aug 7th, 2022",
+      "Jul 1st, 2022",
+      "Jun 18th, 2022",
+      "Jun 17th, 2022"
     ],
     "wordsPerMinute": [
+      134,
+      137,
       129,
       107,
       119,
@@ -529,18 +616,217 @@
     ]
   },
   {
+    "name": "shpoopdy",
+    "dates": [
+      "Jun 16th, 2024"
+    ],
+    "wordsPerMinute": [
+      101
+    ]
+  },
+  {
+    "name": "mattt156",
+    "dates": [
+      "Jun 15th, 2024",
+      "Dec 14th, 2022",
+      "Nov 3rd, 2022",
+      "Jun 6th, 2022"
+    ],
+    "wordsPerMinute": [
+      99,
+      115,
+      114,
+      122
+    ]
+  },
+  {
+    "name": "drolmas",
+    "dates": [
+      "May 13th, 2024"
+    ],
+    "wordsPerMinute": [
+      127
+    ]
+  },
+  {
+    "name": "wraithkaiser",
+    "dates": [
+      "May 8th, 2024",
+      "Mar 29th, 2023",
+      "Dec 2nd, 2022",
+      "Aug 27th, 2022",
+      "Aug 14th, 2022",
+      "Aug 1st, 2022",
+      "Jul 22nd, 2022",
+      "Jun 26th, 2022",
+      "Jun 9th, 2022",
+      "May 18th, 2022"
+    ],
+    "wordsPerMinute": [
+      123,
+      120,
+      114,
+      127,
+      116,
+      98,
+      125,
+      109,
+      108,
+      121
+    ]
+  },
+  {
+    "name": "therealraymondjones",
+    "dates": [
+      "May 6th, 2024"
+    ],
+    "wordsPerMinute": [
+      123
+    ]
+  },
+  {
+    "name": "allownkyz",
+    "dates": [
+      "Apr 24th, 2024"
+    ],
+    "wordsPerMinute": [
+      123
+    ]
+  },
+  {
+    "name": "justjie1008",
+    "dates": [
+      "Apr 20th, 2024"
+    ],
+    "wordsPerMinute": [
+      108
+    ]
+  },
+  {
+    "name": "tomoe_mami",
+    "dates": [
+      "Apr 17th, 2024"
+    ],
+    "wordsPerMinute": [
+      102
+    ]
+  },
+  {
+    "name": "strikeonbruh",
+    "dates": [
+      "Apr 15th, 2024"
+    ],
+    "wordsPerMinute": [
+      121
+    ]
+  },
+  {
+    "name": "jsdf554",
+    "dates": [
+      "Apr 13th, 2024"
+    ],
+    "wordsPerMinute": [
+      109
+    ]
+  },
+  {
+    "name": "strikeonbruhh",
+    "dates": [
+      "Mar 20th, 2024",
+      "Mar 11th, 2024"
+    ],
+    "wordsPerMinute": [
+      112,
+      129
+    ]
+  },
+  {
+    "name": "silicone_milk",
+    "dates": [
+      "Mar 18th, 2024"
+    ],
+    "wordsPerMinute": [
+      85
+    ]
+  },
+  {
+    "name": "sm12333",
+    "dates": [
+      "Mar 13th, 2024"
+    ],
+    "wordsPerMinute": [
+      100
+    ]
+  },
+  {
+    "name": "no3lcodes",
+    "dates": [
+      "Mar 6th, 2024"
+    ],
+    "wordsPerMinute": [
+      98
+    ]
+  },
+  {
+    "name": "inrosis94",
+    "dates": [
+      "Mar 2nd, 2024",
+      "Jun 24th, 2023",
+      "Dec 17th, 2022",
+      "Dec 10th, 2022",
+      "Nov 29th, 2022",
+      "Nov 29th, 2022",
+      "Nov 12th, 2022",
+      "Nov 11th, 2022",
+      "Nov 8th, 2022",
+      "Nov 5th, 2022",
+      "Nov 3rd, 2022",
+      "Aug 21st, 2022",
+      "Aug 8th, 2022",
+      "Aug 7th, 2022",
+      "Jun 22nd, 2022",
+      "Jun 21st, 2022",
+      "Jun 17th, 2022",
+      "Jun 16th, 2022",
+      "Jun 15th, 2022",
+      "Jun 14th, 2022"
+    ],
+    "wordsPerMinute": [
+      124,
+      127,
+      101,
+      122,
+      115,
+      124,
+      123,
+      106,
+      122,
+      111,
+      116,
+      121,
+      121,
+      119,
+      122,
+      105,
+      112,
+      115,
+      108,
+      104
+    ]
+  },
+  {
     "name": "sixpacksexy",
     "dates": [
-      "July 29th 2023",
-      "June 21st 2023",
-      "June 17th 2023",
-      "May 6th 2023",
-      "May 1st 2023",
-      "April 26th 2023",
-      "April 24th 2023",
-      "March 29th 2023",
-      "March 27th 2023",
-      "March 20th 2023"
+      "Jul 29th, 2023",
+      "Jun 21st, 2023",
+      "Jun 17th, 2023",
+      "May 6th, 2023",
+      "May 1st, 2023",
+      "Apr 26th, 2023",
+      "Apr 24th, 2023",
+      "Mar 29th, 2023",
+      "Mar 27th, 2023",
+      "Mar 20th, 2023"
     ],
     "wordsPerMinute": [
       108,
@@ -556,40 +842,82 @@
     ]
   },
   {
+    "name": "notgentle",
+    "dates": [
+      "Jul 26th, 2023",
+      "Jul 26th, 2023",
+      "Jun 14th, 2023",
+      "Nov 2nd, 2022",
+      "Jul 20th, 2022"
+    ],
+    "wordsPerMinute": [
+      128,
+      121,
+      117,
+      117,
+      109
+    ]
+  },
+  {
+    "name": "gorgontes",
+    "dates": [
+      "Jul 22nd, 2023",
+      "Jul 1st, 2023",
+      "Jun 12th, 2023",
+      "May 15th, 2023",
+      "Apr 10th, 2023",
+      "Apr 5th, 2023",
+      "Mar 1st, 2023",
+      "Aug 9th, 2022",
+      "Jun 23rd, 2022"
+    ],
+    "wordsPerMinute": [
+      123,
+      112,
+      109,
+      110,
+      117,
+      105,
+      115,
+      126,
+      135
+    ]
+  },
+  {
     "name": "sendao184",
     "dates": [
-      "July 22nd 2023",
-      "July 17th 2023",
-      "June 24th 2023",
-      "June 21st 2023",
-      "May 17th 2023",
-      "May 10th 2023",
-      "May 6th 2023",
-      "April 24th 2023",
-      "April 22nd 2023",
-      "April 19th 2023",
-      "April 12th 2023",
-      "April 12th 2023",
-      "April 5th 2023",
-      "April 3rd 2023",
-      "April 3rd 2023",
-      "March 25th 2023",
-      "March 4th 2023",
-      "February 27th 2023",
-      "November 2nd 2022",
-      "August 24th 2022",
-      "August 17th 2022",
-      "August 16th 2022",
-      "August 14th 2022",
-      "August 10th 2022",
-      "August 3rd 2022",
-      "August 2nd 2022",
-      "June 24th 2022",
-      "June 16th 2022",
-      "June 14th 2022",
-      "June 13th 2022",
-      "June 9th 2022",
-      "May 16th 2022"
+      "Jul 22nd, 2023",
+      "Jul 17th, 2023",
+      "Jun 24th, 2023",
+      "Jun 21st, 2023",
+      "May 17th, 2023",
+      "May 10th, 2023",
+      "May 6th, 2023",
+      "Apr 24th, 2023",
+      "Apr 22nd, 2023",
+      "Apr 19th, 2023",
+      "Apr 12th, 2023",
+      "Apr 12th, 2023",
+      "Apr 5th, 2023",
+      "Apr 3rd, 2023",
+      "Apr 3rd, 2023",
+      "Mar 25th, 2023",
+      "Mar 4th, 2023",
+      "Feb 27th, 2023",
+      "Nov 2nd, 2022",
+      "Aug 24th, 2022",
+      "Aug 17th, 2022",
+      "Aug 16th, 2022",
+      "Aug 14th, 2022",
+      "Aug 10th, 2022",
+      "Aug 3rd, 2022",
+      "Aug 2nd, 2022",
+      "Jun 24th, 2022",
+      "Jun 16th, 2022",
+      "Jun 14th, 2022",
+      "Jun 13th, 2022",
+      "Jun 9th, 2022",
+      "May 16th, 2022"
     ],
     "wordsPerMinute": [
       115,
@@ -627,9 +955,18 @@
     ]
   },
   {
+    "name": "zombiechou",
+    "dates": [
+      "Jun 28th, 2023"
+    ],
+    "wordsPerMinute": [
+      123
+    ]
+  },
+  {
     "name": "not_gentle",
     "dates": [
-      "June 19th 2023"
+      "Jun 19th, 2023"
     ],
     "wordsPerMinute": [
       129
@@ -638,14 +975,14 @@
   {
     "name": "zapakh",
     "dates": [
-      "June 14th 2023",
-      "August 20th 2022",
-      "August 19th 2022",
-      "August 19th 2022",
-      "August 11th 2022",
-      "August 11th 2022",
-      "May 17th 2022",
-      "May 17th 2022"
+      "Jun 14th, 2023",
+      "Aug 20th, 2022",
+      "Aug 19th, 2022",
+      "Aug 19th, 2022",
+      "Aug 11th, 2022",
+      "Aug 11th, 2022",
+      "May 17th, 2022",
+      "May 17th, 2022"
     ],
     "wordsPerMinute": [
       168,
@@ -661,7 +998,7 @@
   {
     "name": "stovoy",
     "dates": [
-      "April 22nd 2023"
+      "Apr 22nd, 2023"
     ],
     "wordsPerMinute": [
       121
@@ -670,8 +1007,8 @@
   {
     "name": "xproof_",
     "dates": [
-      "April 17th 2023",
-      "December 8th 2022"
+      "Apr 17th, 2023",
+      "Dec 8th, 2022"
     ],
     "wordsPerMinute": [
       119,
@@ -681,7 +1018,7 @@
   {
     "name": "candycrushftw",
     "dates": [
-      "April 17th 2023"
+      "Apr 17th, 2023"
     ],
     "wordsPerMinute": [
       109
@@ -690,7 +1027,7 @@
   {
     "name": "edwin_____",
     "dates": [
-      "April 5th 2023"
+      "Apr 5th, 2023"
     ],
     "wordsPerMinute": [
       114
@@ -699,9 +1036,9 @@
   {
     "name": "zed4477",
     "dates": [
-      "April 3rd 2023",
-      "March 22th 2023",
-      "June 8th 2022"
+      "Apr 3rd, 2023",
+      "Mar 22nd, 2023",
+      "Jun 8th, 2022"
     ],
     "wordsPerMinute": [
       130,
@@ -710,35 +1047,10 @@
     ]
   },
   {
-    "name": "wraithkaiser",
-    "dates": [
-      "March 29th 2023",
-      "December 2nd 2022",
-      "August 27th 2022",
-      "August 14th 2022",
-      "August 1st 2022",
-      "July 22nd 2022",
-      "June 26th 2022",
-      "June 9th 2022",
-      "May 18th 2022"
-    ],
-    "wordsPerMinute": [
-      120,
-      114,
-      127,
-      116,
-      98,
-      125,
-      109,
-      108,
-      121
-    ]
-  },
-  {
     "name": "lilfreezi",
     "dates": [
-      "March 6th 2023",
-      "July 20th 2022"
+      "Mar 6th, 2023",
+      "Jul 20th, 2022"
     ],
     "wordsPerMinute": [
       100,
@@ -746,47 +1058,9 @@
     ]
   },
   {
-    "name": "mattt156",
-    "dates": [
-      "December 14th 2022",
-      "November 3rd 2022",
-      "June 6th 2022"
-    ],
-    "wordsPerMinute": [
-      115,
-      114,
-      122
-    ]
-  },
-  {
-    "name": "pandapoopums",
-    "dates": [
-      "December 13th 2022",
-      "December 7th 2022",
-      "December 1st 2022",
-      "August 4rd 2022",
-      "July 18th 2022",
-      "June 27th 2022",
-      "June 12th 2022",
-      "June 12th 2022",
-      "June 12th 2022"
-    ],
-    "wordsPerMinute": [
-      129,
-      126,
-      133,
-      113,
-      143,
-      138,
-      116,
-      109,
-      105
-    ]
-  },
-  {
     "name": "brownincelyoutube",
     "dates": [
-      "November 10th 2022"
+      "Nov 10th, 2022"
     ],
     "wordsPerMinute": [
       111
@@ -795,31 +1069,16 @@
   {
     "name": "ridacodes",
     "dates": [
-      "October 8th 2022"
+      "Oct 8th, 2022"
     ],
     "wordsPerMinute": [
       117
     ]
   },
   {
-    "name": "larryny",
-    "dates": [
-      "October 1st 2022",
-      "July 19th 2022",
-      "June 28th 2022",
-      "June 27th 2022"
-    ],
-    "wordsPerMinute": [
-      137,
-      120,
-      103,
-      119
-    ]
-  },
-  {
     "name": "scottstotts",
     "dates": [
-      "September 1st 2022"
+      "Sep 1st, 2022"
     ],
     "wordsPerMinute": [
       114
@@ -828,7 +1087,7 @@
   {
     "name": "jok48",
     "dates": [
-      "August 27th 2022"
+      "Aug 27th, 2022"
     ],
     "wordsPerMinute": [
       126
@@ -837,7 +1096,7 @@
   {
     "name": "techygrrrl",
     "dates": [
-      "August 24th 2022"
+      "Aug 24th, 2022"
     ],
     "wordsPerMinute": [
       121
@@ -846,8 +1105,8 @@
   {
     "name": "fomiee",
     "dates": [
-      "August 20th 2022",
-      "July 19th 2022"
+      "Aug 20th, 2022",
+      "Jul 19th, 2022"
     ],
     "wordsPerMinute": [
       114,
@@ -857,10 +1116,10 @@
   {
     "name": "matthewtrieu",
     "dates": [
-      "August 15th 2022",
-      "August 13th 2022",
-      "July 3rd 2022",
-      "June 25th 2022"
+      "Aug 15th, 2022",
+      "Aug 13th, 2022",
+      "Jul 3rd, 2022",
+      "Jun 25th, 2022"
     ],
     "wordsPerMinute": [
       159,
@@ -870,9 +1129,18 @@
     ]
   },
   {
+    "name": "v0lko",
+    "dates": [
+      "Aug 6th, 2022"
+    ],
+    "wordsPerMinute": [
+      124
+    ]
+  },
+  {
     "name": "bilb0swaggins",
     "dates": [
-      "July 3rd 2022"
+      "Jul 3rd, 2022"
     ],
     "wordsPerMinute": [
       127
@@ -881,7 +1149,7 @@
   {
     "name": "fffx0",
     "dates": [
-      "July 2nd 2022"
+      "Jul 2nd, 2022"
     ],
     "wordsPerMinute": [
       107
@@ -890,7 +1158,7 @@
   {
     "name": "hokplext",
     "dates": [
-      "June 30th 2022"
+      "Jun 30th, 2022"
     ],
     "wordsPerMinute": [
       123
@@ -899,7 +1167,7 @@
   {
     "name": "jhkross1",
     "dates": [
-      "June 29th 2022"
+      "Jun 29th, 2022"
     ],
     "wordsPerMinute": [
       123
@@ -908,7 +1176,7 @@
   {
     "name": "indecisiontree",
     "dates": [
-      "June 29th 2022"
+      "Jun 29th, 2022"
     ],
     "wordsPerMinute": [
       114
@@ -917,7 +1185,7 @@
   {
     "name": "riskassessment",
     "dates": [
-      "June 28th 2022"
+      "Jun 28th, 2022"
     ],
     "wordsPerMinute": [
       115
@@ -926,12 +1194,12 @@
   {
     "name": "nacho_fries_bellgrande",
     "dates": [
-      "June 20th 2022",
-      "June 10th 2022",
-      "June 7th 2022",
-      "June 6th 2022",
-      "May 18th 2022",
-      "May 16th 2022"
+      "Jun 20th, 2022",
+      "Jun 10th, 2022",
+      "Jun 7th, 2022",
+      "Jun 6th, 2022",
+      "May 18th, 2022",
+      "May 16th, 2022"
     ],
     "wordsPerMinute": [
       119,
@@ -940,6 +1208,17 @@
       134,
       122,
       132
+    ]
+  },
+  {
+    "name": "vim_tim",
+    "dates": [
+      "Jun 19th, 2022",
+      "Jun 13th, 2022"
+    ],
+    "wordsPerMinute": [
+      114,
+      114
     ]
   }
 ]

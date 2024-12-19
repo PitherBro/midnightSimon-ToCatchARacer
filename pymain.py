@@ -40,42 +40,47 @@ def getChampList():
     '''
     #creates the parser for the HTML Data Document
     bs = BeautifulSoup(getHTMLFileOrNot(), "html.parser")
-    champElementHolder = bs.find('div', {"id": "champs"})
-    championElementList = champElementHolder.find_all('p')
+    table :BeautifulSoup= bs.find('table') 
+    rows :BeautifulSoup= table.find_all('tr')[1:]
 
     championList = [Champion]
-    
-    for champ in championElementList:
-        nameElement = champ.find_all('b')[0]
-        champ.replace_with(nameElement, "")
 
-        name = str(nameElement.text.split(" ")[0]).strip()
-        dateAndWords = champ.text.split("@")
-        date = dateAndWords[0].replace(":", "").strip()
-        words = dateAndWords[1].replace(" wpms", "").strip()
+    for dataElement in rows:
+        # print(dataElement)
+        rowData= dataElement.find_all('th')
+        # dataElement.replace_with(rowData, "")
 
-        #some have comments beside them, might extract later
-        if(len(words.split())>1):
-            words = words.split()[0].strip()
-            #print(words)
+        date = rowData[1].text
+        name = rowData[2].text
+        words = rowData[3].text
+
+        # #some have comments beside them, might extract later
+        # if(len(words.split())>1):
+        #     words = words.split()[0].strip()
+        #     #print(words)
 
         #print(f"{date} <-> {name} <-> { words}")
-        words= int(words)
-        alreadyAdded = False
+        try:
+            words= int(words)
+        except:
+            words = 0
+            # print("error in getChampList")
+        if words > 0:
+            alreadyAdded = False
 
-        if(len(championList) > 1):
+            if(len(championList) > 1):
 
-            for x in range(len(championList)):
-                #print(f"testing item: {x}")
-                if( not x == 0 and championList[x].name == name):
+                for x in range(len(championList)):
+                    #print(f"testing item: {x}")
+                    if( not x == 0 and championList[x].name == name):
 
-                    alreadyAdded = True
-                    championList[x].addAnotherSingleAttempt(date, words)
-        if(not alreadyAdded):
-            c = Champion(date, name, words)
-            championList.append(c)
-            #print(c.convertToJSON())
-            
+                        alreadyAdded = True
+                        championList[x].addAnotherSingleAttempt(date, words)
+            if(not alreadyAdded):
+                c = Champion(date, name, words)
+                championList.append(c)
+                #print(c.convertToJSON())
+        
     return championList[1:]
 
 def saveToJSONFile(champList=[Champion]):
@@ -89,7 +94,7 @@ def saveToJSONFile(champList=[Champion]):
         print(clb.json.dumps(champJSONList, indent=2), file=open(clb.championsFilePath,'w'))
            
 def loadChampionsUpFromJSON():
-    '''Return champtions by reading champtions.json'''
+    '''Return champions by reading champions.json'''
     jsonListOfChamps = clb.json.loads(open(clb.championsFilePath,'r').read())
     listOfChampions = [Champion]
 
@@ -112,56 +117,59 @@ if __name__ == "__main__":
 
     #doing stuff with data
     theRealChampions = loadChampionsUpFromJSON()
+    theFirstChampion :Champion = theRealChampions[0]
 
-    theFastestChamp = theRealChampions[0]
-    theSlowestChamp = theRealChampions[0]
-    theAverageChamp = theRealChampions[0]
-
-    theMostVictoriousChampion = theRealChampions[0]
-    theLeastVictoriousChamption = theRealChampions[0]
     
-    theMostImprovedChampion = theRealChampions[0]
-    theLeastImprovedChampion = theRealChampions[0]
+    theFastestChamp = theFirstChampion
+    theSlowestChamp = theFirstChampion
+    theAverageChamp = theFirstChampion
 
-    stepTracker =0
+    theMostVictoriousChampion = theFirstChampion
+    theLeastVictoriousChamption = theFirstChampion
+    
+    theMostImprovedChampion = theFirstChampion
+    theLeastImprovedChampion = theFirstChampion
 
-    theOverallAverage = theRealChampions[0].getAverageWPM()
+    stepTracker = 0
+
+    theOverallAverage = theFirstChampion.getAverageWPM()
 
     for c in theRealChampions:
+        champ: Champion = c
         #if the most victorious champion has less wins than the current, reassign the champion
-        if theMostVictoriousChampion.getCountedWins() < c.getCountedWins():
-            print(f"{theMostVictoriousChampion.getName()} is no longer <MOST> champ with {theMostVictoriousChampion.getCountedWins() } wins and is replaced with {c.getName()} and {c.getCountedWins()} wins")
-            theMostVictoriousChampion = c
+        if theMostVictoriousChampion.getCountedWins() < champ.getCountedWins():
+            print(f"{theMostVictoriousChampion.getName()} is no longer <MOST> champ with {theMostVictoriousChampion.getCountedWins() } wins and is replaced with {champ.getName()} and {champ.getCountedWins()} wins")
+            theMostVictoriousChampion = champ
             
         #if the least victorious champion has more wins than the current, reassign the champion
-        if len(theLeastVictoriousChamption.getWordsPerLimitList()) > len(c.getWordsPerLimitList()):
-            print(f"{theLeastVictoriousChamption.getName()} is no longer <LEAST> champ with {theLeastVictoriousChamption.getCountedWins() } wins and is replaced with {c.getName()} and {c.getCountedWins()} wins")
-            theLeastVictoriousChamption = c
+        if len(theLeastVictoriousChamption.getWordsPerLimitList()) > len(champ.getWordsPerLimitList()):
+            print(f"{theLeastVictoriousChamption.getName()} is no longer <LEAST> champ with {theLeastVictoriousChamption.getCountedWins() } wins and is replaced with {champ.getName()} and {champ.getCountedWins()} wins")
+            theLeastVictoriousChamption = champ
         #if the slowest champ is faster, they are not the slowest
-        if theSlowestChamp.getSlowestSpeed() > c.getSlowestSpeed():
-            theSlowestChamp = c
+        if theSlowestChamp.getSlowestSpeed() > champ.getSlowestSpeed():
+            theSlowestChamp = champ
         #if the fastest champ is slower, they are not the fastest
-        if theFastestChamp.getFastestSpeed() < c.getFastestSpeed():
-            theFastestChamp = c
+        if theFastestChamp.getFastestSpeed() < champ.getFastestSpeed():
+            theFastestChamp = champ
 
         #the most Average
-        if theAverageChamp.getAverageWPM() < c.getAverageWPM():
-            theAverageChamp = c
+        if theAverageChamp.getAverageWPM() < champ.getAverageWPM():
+            theAverageChamp = champ
 
         #the least improved
-        if theLeastImprovedChampion.getImprovementWeight() > c.getImprovementWeight():
-            theLeastImprovedChampion = c
+        if theLeastImprovedChampion.getImprovementWeight() > champ.getImprovementWeight():
+            theLeastImprovedChampion = champ
 
         #the most improved
-        if theMostImprovedChampion.getImprovementWeight() < c.getImprovementWeight():
-            theMostImprovedChampion = c
+        if theMostImprovedChampion.getImprovementWeight() < champ.getImprovementWeight():
+            theMostImprovedChampion = champ
 
         #find the person with most wins, assign them at the top of the loop nest
         #Check person with most wins, against person with least, to find the one who types the fastest, slowest and most average.
         #the average needs to be known previously or, somehow tracked and adjusted during this loop.
         
         if not stepTracker == 0:
-            theOverallAverage += c.getAverageWPM() 
+            theOverallAverage += champ.getAverageWPM() 
             theOverallAverage /= 2
         stepTracker +=1
 
@@ -179,7 +187,7 @@ Program took {stepTracker} steps to complete and calculates a global average of 
 {theLeastImprovedChampion.getName()} is the LEAST IMPROVED with {theLeastImprovedChampion.getCountedWins()} championship wins and a weighted averaged of {theLeastImprovedChampion.getImprovementWeight()}\n\
 {theMostImprovedChampion.getName()} is the MOST IMPROVED with {theMostImprovedChampion.getCountedWins()} championship wins and a weighted averaged of {theMostImprovedChampion.getImprovementWeight()}\n\
 """)
-    testChamp = theRealChampions[0] 
+    testChamp = theRealChampions[0]
     testChamp.getImprovementWeight()
     #print(f"{testChamp.getName()} {testChamp.getAttendance()[0]} {testChamp.getWordsPerLimitList()[0]}")
     pass

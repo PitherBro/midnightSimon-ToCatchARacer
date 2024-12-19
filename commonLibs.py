@@ -4,13 +4,13 @@ Some commonly shared functions and variables between modules. \n
 mostly utility based.
 '''
 #Python Modules
-import os,sys, urllib3, json, math
+import os, sys, urllib3, json, math
 from pathlib import Path
 
 root = Path(os.path.dirname( __file__ ))
 
 #where the data is on the web
-urlResource = "https://midnightsimon.com/"
+urlResource = "https://midnightsimon.com/typeracer"
 #where to save our data dumps
 dataFolder= root/"data"
 #data that still needs to be sanatized
@@ -29,11 +29,11 @@ paths = [
     rawDataFolder,
     jsonFileFolder,
 ]
-'''a list of all known program directories'''
+'''A list of all known program directories'''
 
 def checkDirs():
     '''
-    checks if all the program directories exists, creates them if not.
+    Checks if all the program directories exists, creates them if not.
     '''
     for p in paths:
         if not os.path.exists(p):
