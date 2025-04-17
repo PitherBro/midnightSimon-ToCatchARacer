@@ -44,6 +44,10 @@ Optional
 All modules and functionality should be stored under the python virtual environment folder `.venv/*`
 simply use the python interpreter under `./.venv/bin/python3`, or activate the appropriate script under `./.venv/bin/activate` [know more!](https://docs.python.org/3/library/venv.html) at the offical documenaation.
 
+
 ----
 
 # windows comming soon
+
+[photography](https://www.twitch.tv/midnight_simon/clip/MuddyColdbloodedMoonM4xHeh-QmESofs7i83HwxzQ)
+<iframe src="https://clips.twitch.tv/embed?clip=MuddyColdbloodedMoonM4xHeh-QmESofs7i83HwxzQ&parent=www.example.com" frameborder="1" allowfullscreen="true" scrolling="yes" height="378" width="620"></iframe>
