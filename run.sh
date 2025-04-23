@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source configs.sh
+source ./configs.sh
 
 python3 -m venv $pythonVenvDir
 # activates the python virtual environment, must be bash

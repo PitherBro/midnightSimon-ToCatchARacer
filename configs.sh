@@ -1,6 +1,7 @@
 
 root=$(pwd)
-pythonVenvDir=".venv"
-pythonVenv=$pythonVenv/bin/activate
+
+pythonVenvDir=$root/".venv"
 pythonDepends=$root/requirements.txt
+pythonVenv=$pythonVenv/bin/activate
 
