@@ -10,7 +10,7 @@ from pathlib import Path
 root = Path(os.path.dirname( __file__ ))
 
 #where the data is on the web
-urlResource = "https://midnightsimon.com/typeracer"
+urlResource = "https://old.midnightsimon.com/"
 #where to save our data dumps
 dataFolder= root/"data"
 #data that still needs to be sanatized

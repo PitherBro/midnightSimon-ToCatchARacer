@@ -37,22 +37,27 @@ def getHTMLFileOrNot():
 def getChampList():
     '''
     Return a list of classes (Champion) by scraping index.html
+    Simon has a new site, this will still work at old.site,\n
+    but need to account for "p" elms instead of "tr"
     '''
     #creates the parser for the HTML Data Document
     bs = BeautifulSoup(getHTMLFileOrNot(), "html.parser")
-    table :BeautifulSoup= bs.find('table') 
-    rows :BeautifulSoup= table.find_all('tr')[1:]
+    table :BeautifulSoup= bs.find('div', attrs={"id":"champs"}) 
+    rows :BeautifulSoup= table.find_all('p')
 
     championList = [Champion]
 
     for dataElement in rows:
+        '''
+new schema is one p elm, with a bold in the center.        
+'''
         # print(dataElement)
         rowData= dataElement.find_all('th')
         # dataElement.replace_with(rowData, "")
 
-        date = rowData[1].text
-        name = rowData[2].text
-        words = rowData[3].text
+        date = rowData[0].text
+        name = rowData[1].text
+        words = rowData[2].text
 
         # #some have comments beside them, might extract later
         # if(len(words.split())>1):
